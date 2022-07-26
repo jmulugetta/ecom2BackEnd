@@ -12,7 +12,7 @@ app.use(express.json());
 
 //creating server below
 //8080 means available port
-app.listen(8080, () => {
+app.listen(process.env.PORT || 3002, () => {
     console.log("This port is ready.")
 })
 
